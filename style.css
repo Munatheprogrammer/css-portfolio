@@ -1,117 +1,245 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mirabel Agu | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* ===== General Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- Fixed Navbar -->
-  <nav id="navbar">
-    <span class="nav-logo">Mirabel Agu</span>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+body {
+  font-family: 'Georgia', serif;
+  color: #222;
+  background-color: #f9f9f9;
+}
 
-  <!-- Header Section -->
-  <header id="header">
-    <h1>Mirabel Munachimso Agu</h1>
-    <p class="tagline">Computer Science Student | Information Security | Web Developer in Training</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/mirabel-agu" target="_blank">LinkedIn</a>
-      <a href="https://github.com/Munatheprogrammer" target="_blank">GitHub</a>
-    </div>
-  </header>
+/* ===== Navbar ===== */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a1a2e;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
 
-  <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="about-container">
-      <img src="profile.jpg" alt="Profile picture of Mirabel Agu" class="profile-img">
-      <div class="bio">
-        <p>Hi, I'm <strong>Mirabel</strong> — a 300-level Computer Science student at ESUT,
-        currently on an IT placement in Information Security. My placement involves network
-        monitoring, vulnerability assessment, and security best practices.</p>
-        <br>
-        <p>I was recently accepted into the <strong>Genesys Tech Hub Upskill 26.1</strong>
-        Web Development program, where I'm building real-world skills and working on
-        projects that actually matter.</p>
-      </div>
-    </div>
-  </section>
+.nav-logo {
+  color: #e2b96f;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill-card">HTML5</div>
-      <div class="skill-card">CSS3</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">Python</div>
-      <div class="skill-card">Git & GitHub</div>
-      <div class="skill-card">Cybersecurity</div>
-      <div class="skill-card">Linux</div>
-      <div class="skill-card">Networking</div>
-    </div>
-  </section>
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
+.nav-links a:hover {
+  color: #e2b96f;
+}
 
-      <!-- Project 1 -->
-      <div class="project-card">
-        <img src="https://via.placeholder.com/300x180" alt="Nigerian Weather Dashboard">
-        <h3>Nigerian Weather Dashboard</h3>
-        <p>A weather dashboard that displays real-time weather data for cities across Nigeria.</p>
-        <a href="https://munatheprogrammer.github.io/Nigerian-Weather-Dashboard" target="_blank">
-          <button class="btn">View Project</button>
-        </a>
-      </div>
+/* ===== Header ===== */
+#header {
+  margin-top: 60px;
+  background-color: #1a1a2e;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
 
-      <!-- Project 2 -->
-      <div class="project-card">
-        <img src="https://via.placeholder.com/300x180" alt="Student Budget Tracker">
-        <h3>Student Budget Tracker</h3>
-        <p>A budget tracking web app designed to help students manage their income and expenses.</p>
-        <a href="https://munatheprogrammer.github.io/Student-Budget-Tracker" target="_blank">
-          <button class="btn">View Project</button>
-        </a>
-      </div>
+#header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #e2b96f;
+}
 
-      <!-- Project 3 -->
-      <div class="project-card">
-        <img src="https://via.placeholder.com/300x180" alt="Personal Profile Page">
-        <h3>Personal Profile Page</h3>
-        <p>A structured personal profile webpage built with semantic HTML as part of my web development training.</p>
-        <a href="https://munatheprogrammer.github.io/my-profile-page" target="_blank">
-          <button class="btn">View Project</button>
-        </a>
-      </div>
+.tagline {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
 
-    </div>
-  </section>
+.social-links a {
+  color: #e2b96f;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.95rem;
+  border: 1px solid #e2b96f;
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-container">
-      <p>Email: <a href="mailto:agumirabel3@gmail.com">agumirabel3@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/mirabel-agu" target="_blank">linkedin.com/in/mirabel-agu</a></p>
-      <p>GitHub: <a href="https://github.com/Munatheprogrammer" target="_blank">github.com/Munatheprogrammer</a></p>
-    </div>
-  </section>
+.social-links a:hover {
+  background-color: #e2b96f;
+  color: #1a1a2e;
+}
 
-  <footer>
-    <p>&copy; 2026 Mirabel Munachimso Agu. All rights reserved.</p>
-  </footer>
+/* ===== Sections General ===== */
+section {
+  padding: 60px 30px;
+}
 
-</body>
-</html>
+section h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1a1a2e;
+  border-bottom: 2px solid #e2b96f;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* ===== About Me ===== */
+#about {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #e2b96f;
+}
+
+.bio p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* ===== Skills ===== */
+#skills {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background-color: #1a1a2e;
+  color: #e2b96f;
+  padding: 14px 24px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border: 1px solid #e2b96f;
+}
+
+/* ===== Projects ===== */
+#projects {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 280px;
+  padding: 16px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.project-card h3 {
+  font-size: 1rem;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.btn {
+  background-color: #1a1a2e;
+  color: #e2b96f;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e2b96f;
+  color: #1a1a2e;
+}
+
+/* ===== Contact ===== */
+#contact {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-container p {
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.contact-container a {
+  color: #1a1a2e;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contact-container a:hover {
+  color: #e2b96f;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #1a1a2e;
+  color: #cccccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+}
