@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mirabel Agu | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fixed Navbar -->
+  <nav id="navbar">
+    <span class="nav-logo">Mirabel Agu</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="header">
+    <h1>Mirabel Munachimso Agu</h1>
+    <p class="tagline">Computer Science Student | Information Security | Web Developer in Training</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/mirabel-agu" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Munatheprogrammer" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="profile.jpg" alt="Profile picture of Mirabel Agu" class="profile-img">
+      <div class="bio">
+        <p>Hi, I'm <strong>Mirabel</strong> — a 300-level Computer Science student at ESUT,
+        currently on an IT placement in Information Security. My placement involves network
+        monitoring, vulnerability assessment, and security best practices.</p>
+        <br>
+        <p>I was recently accepted into the <strong>Genesys Tech Hub Upskill 26.1</strong>
+        Web Development program, where I'm building real-world skills and working on
+        projects that actually matter.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Git & GitHub</div>
+      <div class="skill-card">Cybersecurity</div>
+      <div class="skill-card">Linux</div>
+      <div class="skill-card">Networking</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x180" alt="Nigerian Weather Dashboard">
+        <h3>Nigerian Weather Dashboard</h3>
+        <p>A weather dashboard that displays real-time weather data for cities across Nigeria.</p>
+        <a href="https://munatheprogrammer.github.io/Nigerian-Weather-Dashboard" target="_blank">
+          <button class="btn">View Project</button>
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x180" alt="Student Budget Tracker">
+        <h3>Student Budget Tracker</h3>
+        <p>A budget tracking web app designed to help students manage their income and expenses.</p>
+        <a href="https://munatheprogrammer.github.io/Student-Budget-Tracker" target="_blank">
+          <button class="btn">View Project</button>
+        </a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x180" alt="Personal Profile Page">
+        <h3>Personal Profile Page</h3>
+        <p>A structured personal profile webpage built with semantic HTML as part of my web development training.</p>
+        <a href="https://munatheprogrammer.github.io/my-profile-page" target="_blank">
+          <button class="btn">View Project</button>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <p>Email: <a href="mailto:agumirabel3@gmail.com">agumirabel3@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mirabel-agu" target="_blank">linkedin.com/in/mirabel-agu</a></p>
+      <p>GitHub: <a href="https://github.com/Munatheprogrammer" target="_blank">github.com/Munatheprogrammer</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Mirabel Munachimso Agu. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
